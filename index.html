@@ -5,16 +5,24 @@
     </head>
     <body>
         <div class="header">
-            <h1>My Website</h1>
+            <h1 class="page-title">AbirdThePro</h1>
+            <h2 class="page-subtitle">Projects and Games</h2>
         </div>
         <div class="sidebar"></div>
         <div class="footer"></div>
     </body>
     <style>
-        h1 {
+        .page-title {
             font-size: large;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: flix;
             color: #FFFFFF;
+            text-align: left;
+        }
+        .page-subtitle {
+            font-size: large;
+            font-family: flix-outline;
+            color: #FFFFFF;
+            text-align: right;
         }
 
         .header {
@@ -24,6 +32,15 @@
             background-color: blue;
             position: sticky;
             position: -webkit-sticky;
+        }
+
+        @font-face {
+            font-family: flix;
+            src: url(Flix-Normal.ttf);
+        }
+        @font-face {
+            font-family: flix-outline;
+            src: url(Flix-Outline.ttf);
         }
     </style>
     <script></script>
