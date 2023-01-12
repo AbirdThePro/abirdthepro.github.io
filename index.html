@@ -91,12 +91,18 @@
     <script>
         let currentSlide = 0;
 
+        let slides = document.getElementsByClassName("slide");
+        for (let i=0; i<slides.length; i++) {
+            if (i == currentSlide) slides[i].style.display = "block";
+            else slides[i].style.display = "none";
+        }
+
         function plusSlides(n) {
             let slides = document.getElementsByClassName("slide");
             currentSlide += n;
             for (let i=0; i<slides.length; i++) {
-                if (i == currentSlide) slides[i].style.display = "all";
-                else slides[i].style.display = "block";
+                if (i == currentSlide) slides[i].style.display = "block";
+                else slides[i].style.display = "none";
             }
         }
     </script>
