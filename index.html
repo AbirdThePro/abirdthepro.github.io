@@ -100,6 +100,8 @@
         function plusSlides(n) {
             let slides = document.getElementsByClassName("slide");
             currentSlide += n;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            if (currentSlide >= slides.length) currentSlide = 0;
             for (let i=0; i<slides.length; i++) {
                 if (i == currentSlide) slides[i].style.display = "block";
                 else slides[i].style.display = "none";
