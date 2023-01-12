@@ -9,8 +9,8 @@
             <h2 class="page-subtitle">Projects and Games</h2>
         </div>
 
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <div class="slideshow-container">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <div class="slide" onclick="location.href = 'https://github.com/AbirdThePro/Autoclicker'">
                 <h3 class="slide-title">Autoclicker</h3>
                 <p class="slide-text"></p>
@@ -23,8 +23,8 @@
                 <h3 class="slide-title">Flight Simulator</h3>
                 <p class="slide-text"></p>
             </div>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         <div class="footer">
             <p class="footer-text">
@@ -61,6 +61,7 @@
 
         .header {
             top: 0%;
+            bottom: 20%;
             padding-top: 1%;
             padding-bottom: 1%;
             padding-left: 1%;
@@ -82,6 +83,12 @@
             color: #FFFFFF;
         }
 
+        .slideshow-container {
+            top: 20%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
         .slide {
             display: block;
             border-radius: 5px;
@@ -94,6 +101,7 @@
             color: #00FFAA;
             position: absolute;
             left: 5%;
+            right: 15%;
             display: block;
         }
         .prev:hover {
@@ -104,6 +112,7 @@
             color: #00FFAA;
             position: absolute;
             right: 5%;
+            left: 15%;
             display: block;
         }
         .next:hover {
