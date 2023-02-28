@@ -1,0 +1,34 @@
+<html>
+	<body>
+		<p>Welcome to the HACKER TERMINAL! Congrats on finding it. It is a JavaScript terminal for playing around.</p>
+	</body>
+	<script>
+		function put(text) {
+			document.body.innerHTML += text;
+		}
+		document.addEventListener("keypress", (e) => {
+			if (!executing) {
+				let key = String.fromCharCode(eventKeyName.keyCode);
+				put(key);
+				if (key === "\n") {
+					eval("alert('yo')"); // get code here
+				}
+			}
+		});
+		
+		put("<p>hacker-terminal $ </p><input>type='text'>")
+	</script>
+	<style>
+		input {
+			background-color: black;
+			font-color: white;
+		}
+		p {
+			font-family: Arial;
+			color: white;
+		}
+		body {
+			background-color: black;
+		}
+	</style>
+</html>
